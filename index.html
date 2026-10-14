@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050b1b">
+<meta name="description" content="DivGrid — حلول برمجية ذكية، أنظمة إدارة، تطوير مواقع وتطبيقات، ونقاط بيع تناسب أعمالك.">
+<title>DivGrid | حلول برمجية تصنع الفرق</title>
+<style>
+:root{--bg:#050b1b;--panel:#0a1429;--panel2:#0b1932;--text:#f4f8ff;--muted:#aab9d2;--cyan:#00d9ff;--blue:#3d69ff;--purple:#9b4dff;--line:rgba(95,155,255,.2);--radius:22px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% 12%,rgba(29,69,180,.18),transparent 34%),radial-gradient(ellipse at 15% 40%,rgba(87,27,180,.12),transparent 30%),var(--bg);color:var(--text);font-family:Tahoma,Arial,sans-serif;line-height:1.8;overflow-x:hidden}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}.topline{height:4px;background:linear-gradient(90deg,var(--purple),var(--blue),var(--cyan))}
+header{position:sticky;top:0;z-index:10;background:rgba(5,11,27,.86);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:11px;font-weight:900;font-size:25px;letter-spacing:3px}.logo{width:42px;height:42px;display:grid;place-items:center;clip-path:polygon(25% 0,75% 0,100% 25%,100% 75%,75% 100%,25% 100%,0 75%,0 25%);background:linear-gradient(135deg,var(--cyan),var(--blue),var(--purple));color:#061025;font-size:22px;font-weight:1000;letter-spacing:0}.navlinks{display:flex;align-items:center;gap:26px;color:#c7d5ed;font-size:14px}.navlinks a:hover{color:var(--cyan)}.navcontact{font-size:13px;color:#d9e7ff;direction:ltr;white-space:nowrap}.navcontact a{margin-inline:5px}.menu{display:none;background:none;color:white;border:1px solid var(--line);border-radius:10px;padding:8px 12px}
+.hero{position:relative;padding:70px 0 48px;min-height:590px;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:28px}.hero:before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(39,91,175,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(39,91,175,.07) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(to bottom,black,transparent 88%)}.hero-copy{position:relative;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(0,217,255,.4);background:rgba(0,217,255,.06);color:#75eaff;border-radius:999px;padding:6px 15px;font-size:13px}.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}h1{font-size:clamp(39px,5.1vw,66px);line-height:1.2;letter-spacing:-1.5px;margin:20px 0 18px;font-weight:900}.gradient{background:linear-gradient(90deg,#00e4ff,#4785ff 55%,#b36aff);color:transparent;background-clip:text;-webkit-background-clip:text}.hero p{max-width:570px;color:var(--muted);font-size:17px;margin:0 0 28px}.actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 23px;border-radius:13px;font-weight:800;font-size:14px;transition:.2s;border:1px solid transparent}.btn:hover{transform:translateY(-3px)}.primary{background:linear-gradient(110deg,#00cfee,#315eff 60%,#9749ff);box-shadow:0 10px 30px rgba(49,94,255,.2)}.secondary{border-color:rgba(0,217,255,.55);background:rgba(5,15,34,.6)}.hero-art{position:relative;z-index:1}.hero-art img{display:block;width:100%;filter:drop-shadow(0 0 30px rgba(34,92,255,.22));mix-blend-mode:screen;mask-image:radial-gradient(ellipse,black 54%,transparent 78%)}.float-tag{position:absolute;bottom:8%;right:3%;padding:10px 15px;border:1px solid var(--line);border-radius:14px;background:rgba(6,17,39,.9);font-size:12px;color:#d9e7ff;box-shadow:0 10px 35px #0005}.float-tag b{color:var(--cyan)}
+.section{padding:70px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 35px}.kicker{color:var(--cyan);font-size:12px;font-weight:800;letter-spacing:2px}.section h2{font-size:clamp(28px,3.5vw,42px);line-height:1.3;margin:8px 0 12px}.section-head p{color:var(--muted);margin:0}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.service{position:relative;overflow:hidden;padding:24px 21px;border:1px solid var(--line);border-radius:var(--radius);background:linear-gradient(145deg,rgba(12,28,57,.92),rgba(6,14,31,.9));transition:.25s;min-height:235px}.service:before{content:"";position:absolute;top:0;right:0;left:0;height:2px;background:linear-gradient(90deg,var(--purple),var(--cyan));opacity:.8}.service:hover{transform:translateY(-6px);border-color:rgba(0,217,255,.55);box-shadow:0 18px 42px #0004}.ico{width:48px;height:48px;display:grid;place-items:center;border:1px solid rgba(0,217,255,.55);border-radius:14px;color:var(--cyan);font-size:23px;background:rgba(0,217,255,.07)}.service:nth-child(2n) .ico{color:#bc86ff;border-color:rgba(170,100,255,.55);background:rgba(150,70,255,.08)}.service h3{font-size:18px;margin:16px 0 7px}.service p{font-size:13px;color:var(--muted);margin:0}.service .arrow{display:inline-block;margin-top:15px;color:var(--cyan);font-size:20px}
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:center}.about-card{border:1px solid var(--line);border-radius:26px;padding:28px;background:linear-gradient(145deg,#0b1c3b,#080f22);position:relative;overflow:hidden}.about-card:after{content:"DIVGRID";position:absolute;bottom:-27px;left:-8px;font-size:65px;font-weight:1000;letter-spacing:5px;color:rgba(78,129,255,.07)}.bigmark{font-size:45px;font-weight:1000;line-height:1.2;letter-spacing:4px;background:linear-gradient(90deg,var(--cyan),var(--purple));color:transparent;background-clip:text}.about-card p,.about-copy p{color:var(--muted)}.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}.check{font-size:13px;color:#dce8ff}.check span{color:var(--cyan);margin-left:8px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}.stat{text-align:center;padding:18px 8px;border-inline-start:1px solid var(--line)}.stat:last-child{border:0}.stat b{display:block;font-size:17px;color:#e9f4ff}.stat small{color:var(--muted);font-size:12px}
+.cta{padding:42px;border-radius:28px;border:1px solid rgba(80,131,255,.35);background:radial-gradient(ellipse at 90% 10%,rgba(0,217,255,.14),transparent 35%),linear-gradient(120deg,#0a1833,#0b1028);display:flex;align-items:center;justify-content:space-between;gap:24px}.cta h2{margin:0 0 8px;font-size:30px}.cta p{color:var(--muted);margin:0}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px}.contact-card{border:1px solid var(--line);background:rgba(10,22,45,.7);border-radius:18px;padding:20px;display:flex;align-items:center;gap:15px}.contact-card .ico{flex-shrink:0}.contact-card small{display:block;color:var(--muted)}.contact-card strong{direction:ltr;display:block;font-size:18px;letter-spacing:.4px}
+footer{border-top:1px solid var(--line);margin-top:65px;padding:25px 0;color:#8598b7;font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.foot .brand{font-size:18px;color:#eaf4ff}.foot .logo{width:30px;height:30px;font-size:15px}
+@media(max-width:900px){.navlinks{gap:14px}.navcontact{display:none}.grid{grid-template-columns:repeat(2,1fr)}.hero{grid-template-columns:1fr;gap:0;padding-top:50px}.hero-copy{order:1}.hero-art{order:2;max-width:620px;margin:-10px auto 0}.hero-art img{max-height:340px;object-fit:contain}.about{grid-template-columns:1fr}.about-card{order:2}.about-copy{order:1}}
+@media(max-width:620px){.nav{min-height:68px}.brand{font-size:21px}.menu{display:block}.navlinks{display:none;position:absolute;top:68px;right:4%;left:4%;padding:17px;background:#08142a;border:1px solid var(--line);border-radius:16px;flex-direction:column;align-items:stretch;gap:8px}.navlinks.open{display:flex}.navlinks a{padding:8px}.hero{padding:42px 0 25px;min-height:unset}h1{font-size:42px}.hero p{font-size:15px}.hero-art img{max-height:260px}.section{padding:48px 0}.grid{grid-template-columns:1fr}.service{min-height:unset}.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border:0}.cta{padding:25px;align-items:flex-start;flex-direction:column}.cta h2{font-size:25px}.contact-grid{grid-template-columns:1fr}.contact-card strong{font-size:17px}.checks{grid-template-columns:1fr}.foot{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="topline"></div>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="DivGrid"><span class="logo">D</span><span>DIVGRID</span></a>
+    <nav class="navlinks" id="navlinks">
+      <a href="#home">الرئيسية</a><a href="#services">حلولنا</a><a href="#about">عن DivGrid</a><a href="#contact">تواصل معنا</a>
+    </nav>
+    <div class="navcontact"><a href="tel:01114672635">01114672635</a> · <a href="tel:01128381838">01128381838</a></div>
+    <button class="menu" id="menu" aria-label="فتح القائمة">☰</button>
+  </div>
+</header>
+<main id="home">
+<section class="wrap hero">
+  <div class="hero-copy">
+    <span class="eyebrow"><span class="dot"></span> حلول رقمية مصممة لأعمالك</span>
+    <h1>نحوّل التعقيد<br><span class="gradient">إلى أنظمة ذكية.</span></h1>
+    <p>نصمم ونطور حلولًا برمجية تساعدك تدير شغلك بذكاء، وتبني حضورًا رقميًا أقوى، وتحوّل أفكارك إلى أدوات عملية قابلة للنمو.</p>
+    <div class="actions"><a class="btn primary" href="#services">اكتشف حلولنا <span>←</span></a><a class="btn secondary" href="#contact">ابدأ مشروعك <span>↗</span></a></div>
+  </div>
+  <div class="hero-art">
+    <img src="assets/divgrid-hero-art.png" alt="تصميم هندسي مضيء يرمز إلى الحلول التقنية">
+    <div class="float-tag"><b>SMART SYSTEMS</b><br>تقنية تخدم رؤيتك</div>
+  </div>
+</section>
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head"><span class="kicker">WHAT WE BUILD</span><h2>حلول تقنية على مقاس طموحك</h2><p>من أول فكرة لحد الإطلاق، بنساعدك تختار الأدوات المناسبة لطبيعة شغلك.</p></div>
+    <div class="grid">
+      <article class="service"><div class="ico">⌘</div><h3>أنظمة الإدارة</h3><p>حلول تنظم العمليات والموارد، وتساعدك تتابع الأداء وتاخد قرارات أوضح.</p><span class="arrow">↙</span></article>
+      <article class="service"><div class="ico">⌘</div><h3>تطوير المواقع</h3><p>مواقع عصرية سريعة ومتجاوبة تعكس هوية نشاطك وتقدم تجربة استخدام مميزة.</p><span class="arrow">↙</span></article>
+      <article class="service"><div class="ico">▦</div><h3>نقاط البيع والمخزون</h3><p>أدوات عملية لمتابعة المبيعات والأصناف والفواتير وتنظيم حركة المخزون.</p><span class="arrow">↙</span></article>
+      <article class="service"><div class="ico">⌘</div><h3>حلول مخصصة</h3><p>نطور أنظمة حسب احتياجك الفعلي بدل ما تغيّر شغلك عشان يناسب برنامج جاهز.</p><span class="arrow">↙</span></article>
+    </div>
+  </div>
+</section>
+<section class="section" id="about">
+  <div class="wrap about">
+    <div class="about-card"><div class="bigmark">DIVGRID</div><p>نربط بين الفكرة والتنفيذ بتصميم واضح، وبرمجة مدروسة، واهتمام بالتفاصيل اللي تفرق في تجربة العميل.</p><div class="stats"><div class="stat"><b>تصميم</b><small>يركز على المستخدم</small></div><div class="stat"><b>مرونة</b><small>حسب احتياجك</small></div><div class="stat"><b>تطوير</b><small>قابل للتوسع</small></div><div class="stat"><b>تواصل</b><small>مباشر وواضح</small></div></div></div>
+    <div class="about-copy"><span class="kicker">WHY DIVGRID</span><h2>مش مجرد كود…<br><span class="gradient">حل يخدم شغلك فعلًا.</span></h2><p>كل مشروع بيبدأ بفهم احتياجاتك، وبعدها بنبني تجربة بسيطة في الاستخدام وقوية في النتيجة. هدفنا إن التقنية تسهّل يومك، مش تزود تعقيده.</p><div class="checks"><div class="check"><span>✦</span> تجربة استخدام سهلة</div><div class="check"><span>✦</span> اهتمام بالأمان والخصوصية</div><div class="check"><span>✦</span> تصميم متوافق مع الموبايل</div><div class="check"><span>✦</span> حلول قابلة للتطوير</div></div></div>
+  </div>
+</section>
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="cta"><div><span class="kicker">LET'S BUILD SOMETHING</span><h2>عندك فكرة؟ خلينا نحولها لواقع.</h2><p>احكيلنا عن مشروعك وهنبدأ من احتياجك.</p></div><a class="btn primary" href="https://wa.me/201114672635?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20DivGrid%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83%D9%85" target="_blank" rel="noopener">تواصل عبر واتساب ↗</a></div>
+    <div class="contact-grid">
+      <a class="contact-card" href="tel:01114672635"><div class="ico">☎</div><div><small>اتصال مباشر</small><strong>01114672635</strong></div></a>
+      <a class="contact-card" href="tel:01128381838"><div class="ico">☎</div><div><small>رقم التواصل الثاني</small><strong>01128381838</strong></div></a>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap foot"><a class="brand" href="#home"><span class="logo">D</span><span>DIVGRID</span></a><span>حلول رقمية بطموح أكبر.</span><span>© <span id="year">2026</span> DivGrid. جميع الحقوق محفوظة.</span></div></footer>
+<script>
+const menu=document.getElementById('menu'), links=document.getElementById('navlinks');
+menu.addEventListener('click',()=>links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
